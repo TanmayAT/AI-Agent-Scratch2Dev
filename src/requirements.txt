@@ -1,0 +1,8 @@
+faiss-cpu
+numpy
+sentence-transformers
+redis
+pandas
+google-generativeai
+fastapi
+uvicorn 
