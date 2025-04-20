@@ -2,6 +2,7 @@ import sqlite3
 import pandas as pd
 import google.generativeai as genai
 import re 
+import os
 
 
 hotel_data_path = r"hotel_bookings.csv"  
@@ -13,9 +14,9 @@ hotel_booking_df.to_sql("bookings", conn, if_exists="replace", index=False)
 
 print("Database and table created successfully!")
 
+api_key = os.getenv("GOOGLE_API_KEY")
 
-
-genai.configure(api_key="AIzaSyCAHJwtPzagfyCpKuQ-Ixyi_2QMKW-mjyA")
+genai.configure(api_key=api_key)
 
 # Define DB Schema for LLM
 DB_SCHEMA = """
