@@ -14,7 +14,7 @@ hotel_booking_df.to_sql("bookings", conn, if_exists="replace", index=False)
 
 print("Database and table created successfully!")
 
-api_key = os.getenv("GOOGLE_API_KEY")
+api_key = "AIzaSyCqqXochDTlqutMHKjcVHc87hLdmOKoju0"
 
 genai.configure(api_key=api_key)
 
