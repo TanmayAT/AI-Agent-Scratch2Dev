@@ -2,16 +2,14 @@ version: '3.8'
 
 services:
   redis-service:
-    image: redis:alpine  # no need to build unless you're customizing
+    image: redis:alpine
     container_name: redis-server
     ports:
       - "6379:6379"
     volumes:
       - redis-data:/data
-
-
-
-    
+    networks:
+      - app-network
 
   src-service:
     build:
@@ -26,7 +24,8 @@ services:
     environment:
       - REDIS_HOST=redis-service
       - REDIS_PORT=6379
-
+    networks:
+      - app-network
 
   nginx-service:
     build:
@@ -38,6 +37,12 @@ services:
       - "80:80"
     depends_on:
       - src-service
+    networks:
+      - app-network
 
 volumes:
   redis-data:
+
+networks:
+  app-network:
+    driver: bridge
