@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose app port (change if your app uses a different one)
-EXPOSE 80
+EXPOSE 8080
 
 # Default command to run the app
 CMD ["python", "main.py"]
