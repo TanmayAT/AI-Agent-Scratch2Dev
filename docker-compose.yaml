@@ -9,6 +9,10 @@ services:
     volumes:
       - redis-data:/data
 
+
+
+    
+
   src-service:
     build:
       context: ./src
@@ -16,12 +20,24 @@ services:
     image: src-image
     container_name: src-container
     ports:
-      - "80:80"
+      - "8000:8000"
     depends_on:
       - redis-service
     environment:
       - REDIS_HOST=redis-service
       - REDIS_PORT=6379
+
+
+  nginx-service:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    image: nginx-image
+    container_name: nginx-container
+    ports:
+      - "80:80"
+    depends_on:
+      - src-service
 
 volumes:
   redis-data:
