@@ -9,8 +9,14 @@ from caching import set_cache, get_repsonse, redis_server
 from prometheus_client import (
     Counter, Summary, generate_latest, CONTENT_TYPE_LATEST
 )
+import logging 
 
 app = FastAPI()
+
+logging.basicConfig(
+    level=logging.DEBUG,
+    format="%(asctime)s - %(levelname)s - %(message)s"
+)
 
 # Initialize FAISS
 embedding_dim = 384
@@ -37,7 +43,9 @@ sql_exec_time = Summary("sql_execution_time_seconds", "SQL query execution time"
 @app.middleware("http")
 async def prometheus_middleware(request: Request, call_next):
     method = request.method
+ 
     endpoint = request.url.path
+    logging.info(f"Request coming {method} and {endpoint}")
     api_calls_total.labels(method=method, endpoint=endpoint).inc()
 
     with request_latency.labels(endpoint=endpoint).time():
@@ -56,13 +64,18 @@ class QueryRequest(BaseModel):
 
 @app.get("/")
 def root():
-    return {"message": "Welcome to the Hotel Booking Query API. Use /query to submit your SQL queries."}
+
+    return {"message": "Welcome to the Hotel Booking Query API. Use /query to submit your queries."}
 
 # Metrics Endpoint for Prometheus scraping
 @app.get("/metrics")
 def get_metrics():
-    return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
-
+    
+    try : 
+        
+        return Response(content=generate_latest(), media_type=CONTENT_TYPE_LATEST)
+    except Exception as e : 
+        logging.error(f"Error occoured {e}")
 
 # Main Endpoint
 @app.post("/query")
@@ -71,6 +84,7 @@ def handle_query(request: QueryRequest):
 
     # Check Redis
     if redis_server.exists(user_query):
+        logging.info("getting cache")
         redis_hits.inc()
         response = get_repsonse(user_query)
         return {
@@ -83,22 +97,26 @@ def handle_query(request: QueryRequest):
     redis_misses.inc()
 
     # FAISS semantic similarity
-    user_embedding = model.encode([user_query]).astype(np.float32)
-    if faiss_index.ntotal > 0:
-        faiss_queries_total.inc()
-        D, I = faiss_index.search(user_embedding, 1)
-        similarity_score = 1 - D[0][0]
-        best_match_idx = I[0][0]
+    try : 
+        user_embedding = model.encode([user_query]).astype(np.float32)
+        if faiss_index.ntotal > 0:
+            faiss_queries_total.inc()
+            D, I = faiss_index.search(user_embedding, 1)
+            similarity_score = 1 - D[0][0]
+            best_match_idx = I[0][0]
 
-        if similarity_score > 0.99 and best_match_idx < len(query_db):
-            matched_query = list(query_db.keys())[best_match_idx]
-            cached = query_db[matched_query]
-            return {
-                "cached": True,
-                "sql_query": cached["sql_query"],
-                "records": cached["records"][:5],
-                "explanation": cached["explanation"]
-            }
+            if similarity_score > 0.99 and best_match_idx < len(query_db):
+                matched_query = list(query_db.keys())[best_match_idx]
+                cached = query_db[matched_query]
+                return {
+                    "cached": True,
+                    "sql_query": cached["sql_query"],
+                    "records": cached["records"][:5],
+                    "explanation": cached["explanation"]
+                }
+                
+    except Exception as e : 
+        logging.error(f"An Error occoured-{e}")
 
     # Generate SQL and Execute
     try:
@@ -107,6 +125,7 @@ def handle_query(request: QueryRequest):
             records = execute_sql_query(sql_query)
         explanation = explain_results(user_query, records)
     except Exception as e:
+        logging.error(f"error occoured : {e} ")
         raise HTTPException(status_code=500, detail=str(e))
 
     # Cache result

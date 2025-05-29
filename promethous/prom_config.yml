@@ -1,9 +1,9 @@
 global:
-  scrape_interval: 4s          # Sab targets ko har 4 second mein scrape karega
-  evaluation_interval: 15s     # Rules ya alerts ko 15 second mein check karega
+  scrape_interval: 4s          
+  evaluation_interval: 15s     
 
 scrape_configs:
   - job_name: "fastapi-service"
-    scrape_interval: 4s        # Is job ke liye 4 second interval override karta hai global ko
+    scrape_interval: 4s       
     static_configs:
-      - targets: ["192.168.137.6:8080"]
+      - targets: ["172.24.192.1:8080"]
