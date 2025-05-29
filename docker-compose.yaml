@@ -40,8 +40,35 @@ services:
     networks:
       - app-network
 
+  prometheus-service:
+    image: prom/prometheus
+    container_name: prometheus-container
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./promethous/prom_config.yml:/etc/prometheus/prometheus.yml
+      - prometheus-data:/prometheus
+    networks:
+      - app-network
+
+
+  grafana-service:
+   image : grafana/grafana
+   container_name: grafana-container
+   ports:
+      - "3000:3000"
+   depends_on:
+      - prometheus-service
+   environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_AUTH_ANONYMOUS_ORG_ROLE=Admin
+    
+    
+
 volumes:
   redis-data:
+  prometheus-data:
 
 networks:
   app-network:
