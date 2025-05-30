@@ -45,7 +45,7 @@ pattern_ingester:
     loki_address: http://172.24.192.1:3100 
 
 ruler:
-  alertmanager_url: http://localhost:9093
+  alertmanager_url: http://172.24.192.1:9093
 
 frontend:
   encoding: protobuf

@@ -17,6 +17,8 @@ services:
       dockerfile: Dockerfile
     image: src-image
     container_name: src-container
+    volumes:
+      - ./logs:/app
     ports:
       - "8080:8080"
     depends_on:
@@ -86,10 +88,13 @@ services:
     container_name: promtail
     volumes:
       - ./promtail/promtail-config.yml:/etc/promtail/promtail-config.yml
-      - ./fastapi-app:/var/log/app
+      - ./logs:/var/log/app
     command: -config.file=/etc/promtail/promtail-config.yml
     networks:
       - app-network
+
+
+
 
 
 volumes:
