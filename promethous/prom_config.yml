@@ -2,10 +2,15 @@ global:
   scrape_interval: 15s
 
 scrape_configs:
-  - job_name: 'fastapi-service'
+  - job_name: 'src-service'
     static_configs:
-      - targets: ['172.24.192.1:8080']
+      - targets: ['src-service:8080']  
 
   - job_name: 'loki'
     static_configs:
-      - targets: ['172.24.192.1:3100']
+      - targets: ['loki-service:3100']  
+
+  - job_name: 'prometheus'
+    static_configs:
+      - targets: ['prometheus-service:9090']  
+

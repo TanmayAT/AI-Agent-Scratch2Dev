@@ -158,3 +158,539 @@
 2025-05-30 13:53:53,822 - INFO - Request coming GET and /metrics
 2025-05-30 13:54:08,810 - INFO - Request coming GET and /metrics
 2025-05-30 13:54:23,816 - INFO - Request coming GET and /metrics
+2025-05-30 19:25:08,120 - INFO - Use pytorch device_name: cpu
+2025-05-30 19:25:08,122 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-30 19:25:08,129 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-30 19:25:08,953 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-05-30 19:25:08,963 - DEBUG - Attempting to acquire lock 140156684496656 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-05-30 19:25:08,965 - DEBUG - Lock 140156684496656 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-05-30 19:25:09,672 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 349
+2025-05-30 19:25:09,679 - DEBUG - Attempting to release lock 140156684496656 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-05-30 19:25:09,680 - DEBUG - Lock 140156684496656 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-05-30 19:25:09,933 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-05-30 19:25:09,936 - DEBUG - Attempting to acquire lock 140156686701264 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-05-30 19:25:09,937 - DEBUG - Lock 140156686701264 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-05-30 19:25:10,184 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 116
+2025-05-30 19:25:10,188 - DEBUG - Attempting to release lock 140156686701264 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-05-30 19:25:10,189 - DEBUG - Lock 140156686701264 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-05-30 19:25:10,446 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-05-30 19:25:10,448 - DEBUG - Attempting to acquire lock 140156688317840 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-05-30 19:25:10,450 - DEBUG - Lock 140156688317840 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-05-30 19:25:11,159 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 10454
+2025-05-30 19:25:11,162 - DEBUG - Attempting to release lock 140156688317840 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-05-30 19:25:11,163 - DEBUG - Lock 140156688317840 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-05-30 19:25:11,841 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-05-30 19:25:12,135 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-05-30 19:25:12,137 - DEBUG - Attempting to acquire lock 140156688219344 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-05-30 19:25:12,137 - DEBUG - Lock 140156688219344 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-05-30 19:25:12,394 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 53
+2025-05-30 19:25:12,397 - DEBUG - Attempting to release lock 140156688219344 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-05-30 19:25:12,398 - DEBUG - Lock 140156688219344 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-05-30 19:25:12,635 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-05-30 19:25:12,897 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-05-30 19:25:12,899 - DEBUG - Attempting to acquire lock 140156688226064 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-05-30 19:25:12,900 - DEBUG - Lock 140156688226064 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-05-30 19:25:13,159 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 612
+2025-05-30 19:25:13,161 - DEBUG - Attempting to release lock 140156688226064 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-05-30 19:25:13,162 - DEBUG - Lock 140156688226064 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-05-30 19:25:15,611 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/model.safetensors HTTP/1.1" 302 0
+2025-05-30 19:25:15,615 - DEBUG - Attempting to acquire lock 140156681197968 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-05-30 19:25:15,616 - DEBUG - Lock 140156681197968 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-05-30 19:25:15,923 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/xet-read-token/c9745ed1d9f207416be6d2e6f8de32d1f16199bf HTTP/1.1" 200 325
+2025-05-30 19:25:45,043 - DEBUG - Attempting to release lock 140156681197968 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-05-30 19:25:45,045 - DEBUG - Lock 140156681197968 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-05-30 19:25:45,513 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-05-30 19:25:45,517 - DEBUG - Attempting to acquire lock 140156693003600 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-05-30 19:25:45,518 - DEBUG - Lock 140156693003600 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-05-30 19:25:45,770 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 350
+2025-05-30 19:25:45,773 - DEBUG - Attempting to release lock 140156693003600 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-05-30 19:25:45,774 - DEBUG - Lock 140156693003600 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-05-30 19:25:46,019 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-05-30 19:25:46,300 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/vocab.txt HTTP/1.1" 200 0
+2025-05-30 19:25:46,302 - DEBUG - Attempting to acquire lock 140156680283408 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-05-30 19:25:46,303 - DEBUG - Lock 140156680283408 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-05-30 19:25:46,574 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/vocab.txt HTTP/1.1" 200 231508
+2025-05-30 19:25:47,012 - DEBUG - Attempting to release lock 140156680283408 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-05-30 19:25:47,012 - DEBUG - Lock 140156680283408 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-05-30 19:25:47,267 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2025-05-30 19:25:47,270 - DEBUG - Attempting to acquire lock 140156680843408 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-05-30 19:25:47,271 - DEBUG - Lock 140156680843408 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-05-30 19:25:47,524 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer.json HTTP/1.1" 200 466247
+2025-05-30 19:25:48,000 - DEBUG - Attempting to release lock 140156680843408 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-05-30 19:25:48,001 - DEBUG - Lock 140156680843408 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-05-30 19:25:48,270 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2025-05-30 19:25:48,526 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2025-05-30 19:25:48,528 - DEBUG - Attempting to acquire lock 140156680690064 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-05-30 19:25:48,530 - DEBUG - Lock 140156680690064 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-05-30 19:25:48,770 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json HTTP/1.1" 200 112
+2025-05-30 19:25:48,772 - DEBUG - Attempting to release lock 140156680690064 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-05-30 19:25:48,773 - DEBUG - Lock 140156680690064 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-05-30 19:25:49,037 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-05-30 19:25:49,387 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6796
+2025-05-30 19:25:49,396 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-30 19:25:49,680 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling/config.json HTTP/1.1" 200 0
+2025-05-30 19:25:49,683 - DEBUG - Attempting to acquire lock 140156680692688 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-05-30 19:25:49,685 - DEBUG - Lock 140156680692688 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-05-30 19:25:50,335 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling/config.json HTTP/1.1" 200 190
+2025-05-30 19:25:50,337 - DEBUG - Attempting to release lock 140156680692688 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-05-30 19:25:50,338 - DEBUG - Lock 140156680692688 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-05-30 19:25:50,618 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6796
+2025-05-30 19:25:50,648 - DEBUG - Using selector: EpollSelector
+2025-05-30 19:34:23,147 - INFO - Use pytorch device_name: cpu
+2025-05-30 19:34:23,148 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-05-30 19:34:23,154 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-05-30 19:34:24,026 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-05-30 19:34:24,687 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-05-30 19:34:24,928 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-05-30 19:34:25,639 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-05-30 19:34:26,298 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-05-30 19:34:26,544 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-05-30 19:34:26,800 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-05-30 19:34:28,797 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-05-30 19:34:29,062 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-05-30 19:34:29,516 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6796
+2025-05-30 19:34:29,814 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6796
+2025-05-30 19:34:29,840 - DEBUG - Using selector: EpollSelector
+2025-05-30 19:34:40,931 - INFO - Request coming GET and /metrics
+2025-05-30 19:34:55,912 - INFO - Request coming GET and /metrics
+2025-05-30 19:34:59,350 - INFO - Request coming GET and /3100/metrics
+2025-05-30 19:34:59,531 - INFO - Request coming GET and /favicon.ico
+2025-05-30 19:35:10,918 - INFO - Request coming GET and /metrics
+2025-05-30 19:35:25,910 - INFO - Request coming GET and /metrics
+2025-05-30 19:35:31,756 - INFO - Request coming GET and /
+2025-05-30 19:35:31,839 - INFO - Request coming GET and /favicon.ico
+2025-05-30 19:35:39,782 - INFO - Request coming GET and /metrics
+2025-05-30 19:35:40,917 - INFO - Request coming GET and /metrics
+2025-05-30 19:35:55,908 - INFO - Request coming GET and /metrics
+2025-05-30 19:36:10,910 - INFO - Request coming GET and /metrics
+2025-05-30 19:36:25,912 - INFO - Request coming GET and /metrics
+2025-05-30 19:36:40,908 - INFO - Request coming GET and /metrics
+2025-05-30 19:36:55,911 - INFO - Request coming GET and /metrics
+2025-05-30 19:37:10,923 - INFO - Request coming GET and /metrics
+2025-05-30 19:37:25,909 - INFO - Request coming GET and /metrics
+2025-05-30 19:37:40,925 - INFO - Request coming GET and /metrics
+2025-05-30 19:37:55,946 - INFO - Request coming GET and /metrics
+2025-05-30 19:38:10,911 - INFO - Request coming GET and /metrics
+2025-05-30 19:38:25,922 - INFO - Request coming GET and /metrics
+2025-05-30 19:38:28,243 - INFO - Request coming GET and /
+2025-05-30 19:38:39,559 - INFO - Request coming GET and /
+2025-05-30 19:38:40,909 - INFO - Request coming GET and /metrics
+2025-05-30 19:38:55,910 - INFO - Request coming GET and /metrics
+2025-05-30 19:39:10,918 - INFO - Request coming GET and /metrics
+2025-05-30 19:39:25,925 - INFO - Request coming GET and /metrics
+2025-05-30 19:39:40,911 - INFO - Request coming GET and /metrics
+2025-05-30 19:39:53,442 - INFO - Request coming POST and /query
+2025-05-30 19:39:55,927 - INFO - Request coming GET and /metrics
+2025-05-30 19:40:10,915 - INFO - Request coming GET and /metrics
+2025-05-30 19:40:25,902 - INFO - Request coming GET and /metrics
+2025-05-30 19:40:40,900 - INFO - Request coming GET and /metrics
+2025-05-30 19:40:55,907 - INFO - Request coming GET and /metrics
+2025-05-30 19:41:10,906 - INFO - Request coming GET and /metrics
+2025-05-30 19:41:25,907 - INFO - Request coming GET and /metrics
+2025-05-30 19:41:40,906 - INFO - Request coming GET and /metrics
+2025-05-30 19:41:55,911 - INFO - Request coming GET and /metrics
+2025-05-30 19:42:10,907 - INFO - Request coming GET and /metrics
+2025-05-30 19:42:25,910 - INFO - Request coming GET and /metrics
+2025-05-30 19:42:40,913 - INFO - Request coming GET and /metrics
+2025-05-30 19:42:55,915 - INFO - Request coming GET and /metrics
+2025-05-30 19:43:10,909 - INFO - Request coming GET and /metrics
+2025-05-30 19:43:25,905 - INFO - Request coming GET and /metrics
+2025-05-30 19:43:40,901 - INFO - Request coming GET and /metrics
+2025-05-30 19:43:55,910 - INFO - Request coming GET and /metrics
+2025-05-30 19:44:10,903 - INFO - Request coming GET and /metrics
+2025-05-30 19:44:25,900 - INFO - Request coming GET and /metrics
+2025-05-30 19:44:40,900 - INFO - Request coming GET and /metrics
+2025-05-30 19:44:55,899 - INFO - Request coming GET and /metrics
+2025-05-30 19:45:10,910 - INFO - Request coming GET and /metrics
+2025-05-30 19:45:25,906 - INFO - Request coming GET and /metrics
+2025-05-30 19:45:40,909 - INFO - Request coming GET and /metrics
+2025-05-30 19:45:55,898 - INFO - Request coming GET and /metrics
+2025-05-30 19:46:10,898 - INFO - Request coming GET and /metrics
+2025-05-30 19:46:25,899 - INFO - Request coming GET and /metrics
+2025-05-30 19:46:40,899 - INFO - Request coming GET and /metrics
+2025-05-30 19:46:55,899 - INFO - Request coming GET and /metrics
+2025-05-30 19:47:10,917 - INFO - Request coming GET and /metrics
+2025-05-30 19:47:25,906 - INFO - Request coming GET and /metrics
+2025-05-30 19:47:40,907 - INFO - Request coming GET and /metrics
+2025-05-30 19:47:55,897 - INFO - Request coming GET and /metrics
+2025-05-30 19:48:10,904 - INFO - Request coming GET and /metrics
+2025-05-30 19:48:25,906 - INFO - Request coming GET and /metrics
+2025-05-30 19:48:40,908 - INFO - Request coming GET and /metrics
+2025-05-30 19:48:55,895 - INFO - Request coming GET and /metrics
+2025-05-30 19:49:10,898 - INFO - Request coming GET and /metrics
+2025-05-30 19:49:25,903 - INFO - Request coming GET and /metrics
+2025-05-30 19:49:40,897 - INFO - Request coming GET and /metrics
+2025-05-30 19:49:55,900 - INFO - Request coming GET and /metrics
+2025-05-30 19:50:10,910 - INFO - Request coming GET and /metrics
+2025-05-30 19:50:25,891 - INFO - Request coming GET and /metrics
+2025-05-30 19:50:40,891 - INFO - Request coming GET and /metrics
+2025-05-30 19:50:55,890 - INFO - Request coming GET and /metrics
+2025-05-30 19:51:10,890 - INFO - Request coming GET and /metrics
+2025-05-30 19:51:25,889 - INFO - Request coming GET and /metrics
+2025-05-30 19:51:40,891 - INFO - Request coming GET and /metrics
+2025-05-30 19:51:55,895 - INFO - Request coming GET and /metrics
+2025-05-30 19:52:10,891 - INFO - Request coming GET and /metrics
+2025-05-30 19:52:25,890 - INFO - Request coming GET and /metrics
+2025-05-30 19:52:40,888 - INFO - Request coming GET and /metrics
+2025-05-30 19:52:55,889 - INFO - Request coming GET and /metrics
+2025-05-30 19:53:10,890 - INFO - Request coming GET and /metrics
+2025-05-30 19:53:25,888 - INFO - Request coming GET and /metrics
+2025-05-30 19:53:40,887 - INFO - Request coming GET and /metrics
+2025-05-30 19:53:55,886 - INFO - Request coming GET and /metrics
+2025-05-30 19:54:10,887 - INFO - Request coming GET and /metrics
+2025-05-30 19:54:25,891 - INFO - Request coming GET and /metrics
+2025-05-31 01:42:41,205 - INFO - Request coming GET and /metrics
+2025-05-31 01:42:56,178 - INFO - Request coming GET and /metrics
+2025-05-31 01:43:11,177 - INFO - Request coming GET and /metrics
+2025-05-31 01:43:26,182 - INFO - Request coming GET and /metrics
+2025-05-31 01:43:41,179 - INFO - Request coming GET and /metrics
+2025-05-31 01:43:56,184 - INFO - Request coming GET and /metrics
+2025-05-31 01:44:11,187 - INFO - Request coming GET and /metrics
+2025-05-31 01:44:26,188 - INFO - Request coming GET and /metrics
+2025-05-31 01:44:41,188 - INFO - Request coming GET and /metrics
+2025-05-31 01:44:56,183 - INFO - Request coming GET and /metrics
+2025-05-31 01:45:11,187 - INFO - Request coming GET and /metrics
+2025-05-31 01:45:26,177 - INFO - Request coming GET and /metrics
+2025-05-31 01:45:39,370 - INFO - Request coming POST and /query
+2025-05-31 01:45:39,506 - INFO - getting cache
+2025-05-31 01:45:41,182 - INFO - Request coming GET and /metrics
+2025-05-31 01:45:43,498 - INFO - Request coming POST and /query
+2025-05-31 01:45:43,502 - INFO - getting cache
+2025-05-31 01:45:56,192 - INFO - Request coming GET and /metrics
+2025-05-31 01:46:11,182 - INFO - Request coming GET and /metrics
+2025-05-31 01:46:26,178 - INFO - Request coming GET and /metrics
+2025-05-31 01:46:41,176 - INFO - Request coming GET and /metrics
+2025-05-31 01:46:56,179 - INFO - Request coming GET and /metrics
+2025-05-31 01:47:11,181 - INFO - Request coming GET and /metrics
+2025-05-31 01:47:26,180 - INFO - Request coming GET and /metrics
+2025-05-31 01:47:41,183 - INFO - Request coming GET and /metrics
+2025-05-31 01:47:56,181 - INFO - Request coming GET and /metrics
+2025-05-31 01:48:11,183 - INFO - Request coming GET and /metrics
+2025-05-31 01:48:26,178 - INFO - Request coming GET and /metrics
+2025-05-31 01:48:41,177 - INFO - Request coming GET and /metrics
+2025-05-31 01:48:56,176 - INFO - Request coming GET and /metrics
+2025-05-31 01:49:11,185 - INFO - Request coming GET and /metrics
+2025-05-31 01:49:26,174 - INFO - Request coming GET and /metrics
+2025-05-31 01:49:41,177 - INFO - Request coming GET and /metrics
+2025-05-31 01:49:56,171 - INFO - Request coming GET and /metrics
+2025-05-31 01:50:11,170 - INFO - Request coming GET and /metrics
+2025-05-31 01:50:26,178 - INFO - Request coming GET and /metrics
+2025-05-31 01:50:41,179 - INFO - Request coming GET and /metrics
+2025-05-31 01:50:56,171 - INFO - Request coming GET and /metrics
+2025-05-31 01:51:11,170 - INFO - Request coming GET and /metrics
+2025-05-31 01:51:26,169 - INFO - Request coming GET and /metrics
+2025-05-31 01:51:41,174 - INFO - Request coming GET and /metrics
+2025-05-31 01:51:56,178 - INFO - Request coming GET and /metrics
+2025-05-31 01:52:11,178 - INFO - Request coming GET and /metrics
+2025-05-31 01:52:26,169 - INFO - Request coming GET and /metrics
+2025-05-31 01:52:41,171 - INFO - Request coming GET and /metrics
+2025-05-31 01:52:56,170 - INFO - Request coming GET and /metrics
+2025-05-31 01:53:11,170 - INFO - Request coming GET and /metrics
+2025-05-31 01:53:26,177 - INFO - Request coming GET and /metrics
+2025-05-31 01:53:41,170 - INFO - Request coming GET and /metrics
+2025-05-31 01:53:56,171 - INFO - Request coming GET and /metrics
+2025-05-31 01:54:11,171 - INFO - Request coming GET and /metrics
+2025-05-31 01:54:26,170 - INFO - Request coming GET and /metrics
+2025-05-31 01:54:41,170 - INFO - Request coming GET and /metrics
+2025-05-31 01:54:56,169 - INFO - Request coming GET and /metrics
+2025-05-31 01:55:11,175 - INFO - Request coming GET and /metrics
+2025-05-31 01:55:26,173 - INFO - Request coming GET and /metrics
+2025-05-31 01:55:41,173 - INFO - Request coming GET and /metrics
+2025-05-31 01:55:56,170 - INFO - Request coming GET and /metrics
+2025-05-31 01:56:11,180 - INFO - Request coming GET and /metrics
+2025-05-31 01:56:26,172 - INFO - Request coming GET and /metrics
+2025-05-31 01:56:41,168 - INFO - Request coming GET and /metrics
+2025-05-31 01:56:56,173 - INFO - Request coming GET and /metrics
+2025-05-31 01:57:11,166 - INFO - Request coming GET and /metrics
+2025-05-31 01:57:26,168 - INFO - Request coming GET and /metrics
+2025-05-31 01:57:41,171 - INFO - Request coming GET and /metrics
+2025-05-31 01:57:56,167 - INFO - Request coming GET and /metrics
+2025-05-31 01:58:11,173 - INFO - Request coming GET and /metrics
+2025-05-31 01:58:26,169 - INFO - Request coming GET and /metrics
+2025-05-31 01:58:41,162 - INFO - Request coming GET and /metrics
+2025-05-31 01:58:56,163 - INFO - Request coming GET and /metrics
+2025-05-31 01:59:11,163 - INFO - Request coming GET and /metrics
+2025-05-31 01:59:26,165 - INFO - Request coming GET and /metrics
+2025-05-31 01:59:41,169 - INFO - Request coming GET and /metrics
+2025-05-31 01:59:56,165 - INFO - Request coming GET and /metrics
+2025-05-31 02:00:11,169 - INFO - Request coming GET and /metrics
+2025-05-31 02:00:26,181 - INFO - Request coming GET and /metrics
+2025-05-31 02:00:41,165 - INFO - Request coming GET and /metrics
+2025-05-31 02:00:56,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:01:11,169 - INFO - Request coming GET and /metrics
+2025-05-31 02:01:26,165 - INFO - Request coming GET and /metrics
+2025-05-31 02:01:41,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:01:56,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:02:11,170 - INFO - Request coming GET and /metrics
+2025-05-31 02:02:26,196 - INFO - Request coming GET and /metrics
+2025-05-31 02:02:41,168 - INFO - Request coming GET and /metrics
+2025-05-31 02:02:56,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:03:11,167 - INFO - Request coming GET and /metrics
+2025-05-31 02:03:26,165 - INFO - Request coming GET and /metrics
+2025-05-31 02:03:41,164 - INFO - Request coming GET and /metrics
+2025-05-31 02:03:56,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:04:11,167 - INFO - Request coming GET and /metrics
+2025-05-31 02:04:26,168 - INFO - Request coming GET and /metrics
+2025-05-31 02:04:41,167 - INFO - Request coming GET and /metrics
+2025-05-31 02:04:56,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:05:11,172 - INFO - Request coming GET and /metrics
+2025-05-31 02:05:26,167 - INFO - Request coming GET and /metrics
+2025-05-31 02:05:41,167 - INFO - Request coming GET and /metrics
+2025-05-31 02:05:56,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:06:11,180 - INFO - Request coming GET and /metrics
+2025-05-31 02:06:26,175 - INFO - Request coming GET and /metrics
+2025-05-31 02:06:41,167 - INFO - Request coming GET and /metrics
+2025-05-31 02:06:56,167 - INFO - Request coming GET and /metrics
+2025-05-31 02:07:11,181 - INFO - Request coming GET and /metrics
+2025-05-31 02:07:26,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:07:41,167 - INFO - Request coming GET and /metrics
+2025-05-31 02:07:56,167 - INFO - Request coming GET and /metrics
+2025-05-31 02:08:11,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:08:26,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:08:41,178 - INFO - Request coming GET and /metrics
+2025-05-31 02:08:56,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:09:11,177 - INFO - Request coming GET and /metrics
+2025-05-31 02:09:26,168 - INFO - Request coming GET and /metrics
+2025-05-31 02:09:41,169 - INFO - Request coming GET and /metrics
+2025-05-31 02:09:56,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:10:11,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:10:26,174 - INFO - Request coming GET and /metrics
+2025-05-31 02:10:41,171 - INFO - Request coming GET and /metrics
+2025-05-31 02:10:56,164 - INFO - Request coming GET and /metrics
+2025-05-31 02:11:11,164 - INFO - Request coming GET and /metrics
+2025-05-31 02:11:26,163 - INFO - Request coming GET and /metrics
+2025-05-31 02:11:41,162 - INFO - Request coming GET and /metrics
+2025-05-31 02:11:56,164 - INFO - Request coming GET and /metrics
+2025-05-31 02:12:11,163 - INFO - Request coming GET and /metrics
+2025-05-31 02:12:26,162 - INFO - Request coming GET and /metrics
+2025-05-31 02:12:41,162 - INFO - Request coming GET and /metrics
+2025-05-31 02:12:56,173 - INFO - Request coming GET and /metrics
+2025-05-31 02:13:11,160 - INFO - Request coming GET and /metrics
+2025-05-31 02:13:26,160 - INFO - Request coming GET and /metrics
+2025-05-31 02:13:41,161 - INFO - Request coming GET and /metrics
+2025-05-31 02:13:56,162 - INFO - Request coming GET and /metrics
+2025-05-31 02:14:11,163 - INFO - Request coming GET and /metrics
+2025-05-31 02:14:26,172 - INFO - Request coming GET and /metrics
+2025-05-31 02:14:41,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:14:56,158 - INFO - Request coming GET and /metrics
+2025-05-31 02:15:11,160 - INFO - Request coming GET and /metrics
+2025-05-31 02:15:26,162 - INFO - Request coming GET and /metrics
+2025-05-31 02:15:41,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:15:56,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:16:11,163 - INFO - Request coming GET and /metrics
+2025-05-31 02:16:26,161 - INFO - Request coming GET and /metrics
+2025-05-31 02:16:41,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:16:56,166 - INFO - Request coming GET and /metrics
+2025-05-31 02:17:11,165 - INFO - Request coming GET and /metrics
+2025-05-31 02:17:26,160 - INFO - Request coming GET and /metrics
+2025-05-31 02:17:41,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:17:56,162 - INFO - Request coming GET and /metrics
+2025-05-31 02:18:11,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:18:26,161 - INFO - Request coming GET and /metrics
+2025-05-31 02:18:41,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:18:56,162 - INFO - Request coming GET and /metrics
+2025-05-31 02:19:11,160 - INFO - Request coming GET and /metrics
+2025-05-31 02:19:26,161 - INFO - Request coming GET and /metrics
+2025-05-31 02:19:41,160 - INFO - Request coming GET and /metrics
+2025-05-31 02:19:56,160 - INFO - Request coming GET and /metrics
+2025-05-31 02:20:11,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:20:26,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:20:41,160 - INFO - Request coming GET and /metrics
+2025-05-31 02:20:56,158 - INFO - Request coming GET and /metrics
+2025-05-31 02:21:11,162 - INFO - Request coming GET and /metrics
+2025-05-31 02:21:26,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:21:41,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:21:56,161 - INFO - Request coming GET and /metrics
+2025-05-31 02:22:11,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:22:26,163 - INFO - Request coming GET and /metrics
+2025-05-31 02:22:41,159 - INFO - Request coming GET and /metrics
+2025-05-31 02:22:56,163 - INFO - Request coming GET and /metrics
+2025-05-31 02:23:11,162 - INFO - Request coming GET and /metrics
+2025-05-31 02:23:26,165 - INFO - Request coming GET and /metrics
+2025-05-31 02:23:42,077 - INFO - Request coming GET and /metrics
+2025-05-31 07:26:37,249 - INFO - Request coming GET and /metrics
+2025-06-02 13:18:36,167 - INFO - Use pytorch device_name: cpu
+2025-06-02 13:18:36,168 - INFO - Load pretrained SentenceTransformer: all-MiniLM-L6-v2
+2025-06-02 13:18:36,173 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-06-02 13:18:36,568 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-06-02 13:18:36,575 - DEBUG - Attempting to acquire lock 139764614235536 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-06-02 13:18:36,576 - DEBUG - Lock 139764614235536 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-06-02 13:18:36,817 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 349
+2025-06-02 13:18:36,821 - DEBUG - Attempting to release lock 139764614235536 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-06-02 13:18:36,822 - DEBUG - Lock 139764614235536 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/952a9b81c0bfd99800fabf352f69c7ccd46c5e43.lock
+2025-06-02 13:18:37,065 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 0
+2025-06-02 13:18:37,066 - DEBUG - Attempting to acquire lock 139764774700496 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-06-02 13:18:37,068 - DEBUG - Lock 139764774700496 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-06-02 13:18:37,727 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json HTTP/1.1" 200 116
+2025-06-02 13:18:37,729 - DEBUG - Attempting to release lock 139764774700496 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-06-02 13:18:37,729 - DEBUG - Lock 139764774700496 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fd1b291129c607e5d49799f87cb219b27f98acdf.lock
+2025-06-02 13:18:37,969 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 0
+2025-06-02 13:18:37,970 - DEBUG - Attempting to acquire lock 139764589751632 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-06-02 13:18:37,972 - DEBUG - Lock 139764589751632 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-06-02 13:18:38,211 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md HTTP/1.1" 200 10454
+2025-06-02 13:18:38,213 - DEBUG - Attempting to release lock 139764589751632 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-06-02 13:18:38,214 - DEBUG - Lock 139764589751632 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/58d4a9a45664eb9e12de9549c548c09b6134c17f.lock
+2025-06-02 13:18:38,468 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json HTTP/1.1" 200 0
+2025-06-02 13:18:38,719 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 0
+2025-06-02 13:18:38,721 - DEBUG - Attempting to acquire lock 139764579312720 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-06-02 13:18:38,722 - DEBUG - Lock 139764579312720 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-06-02 13:18:38,968 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json HTTP/1.1" 200 53
+2025-06-02 13:18:38,969 - DEBUG - Attempting to release lock 139764579312720 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-06-02 13:18:38,970 - DEBUG - Lock 139764579312720 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/59d594003bf59880a884c574bf88ef7555bb0202.lock
+2025-06-02 13:18:39,235 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json HTTP/1.1" 404 0
+2025-06-02 13:18:39,477 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 0
+2025-06-02 13:18:39,479 - DEBUG - Attempting to acquire lock 139764579318864 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-06-02 13:18:39,480 - DEBUG - Lock 139764579318864 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-06-02 13:18:39,723 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json HTTP/1.1" 200 612
+2025-06-02 13:18:39,726 - DEBUG - Attempting to release lock 139764579318864 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-06-02 13:18:39,727 - DEBUG - Lock 139764579318864 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/72b987fd805cfa2b58c4c8c952b274a11bfd5a00.lock
+2025-06-02 13:18:41,171 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/model.safetensors HTTP/1.1" 302 0
+2025-06-02 13:18:41,175 - DEBUG - Attempting to acquire lock 139764583121168 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-06-02 13:18:41,176 - DEBUG - Lock 139764583121168 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-06-02 13:18:41,457 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/xet-read-token/c9745ed1d9f207416be6d2e6f8de32d1f16199bf HTTP/1.1" 200 325
+2025-06-02 13:18:53,199 - DEBUG - Attempting to release lock 139764583121168 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-06-02 13:18:53,200 - DEBUG - Lock 139764583121168 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/53aa51172d142c89d9012cce15ae4d6cc0ca6895895114379cacb4fab128d9db.lock
+2025-06-02 13:18:53,565 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 0
+2025-06-02 13:18:53,567 - DEBUG - Attempting to acquire lock 139764582150608 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-06-02 13:18:53,569 - DEBUG - Lock 139764582150608 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-06-02 13:18:53,810 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json HTTP/1.1" 200 350
+2025-06-02 13:18:53,812 - DEBUG - Attempting to release lock 139764582150608 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-06-02 13:18:53,812 - DEBUG - Lock 139764582150608 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/c79f2b6a0cea6f4b564fed1938984bace9d30ff0.lock
+2025-06-02 13:18:54,059 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=False&expand=False HTTP/1.1" 404 64
+2025-06-02 13:18:54,297 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/vocab.txt HTTP/1.1" 200 0
+2025-06-02 13:18:54,301 - DEBUG - Attempting to acquire lock 139764582149584 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-06-02 13:18:54,302 - DEBUG - Lock 139764582149584 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-06-02 13:18:54,563 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/vocab.txt HTTP/1.1" 200 231508
+2025-06-02 13:18:54,775 - DEBUG - Attempting to release lock 139764582149584 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-06-02 13:18:54,775 - DEBUG - Lock 139764582149584 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/fb140275c155a9c7c5a3b3e0e77a9e839594a938.lock
+2025-06-02 13:18:55,015 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer.json HTTP/1.1" 200 0
+2025-06-02 13:18:55,017 - DEBUG - Attempting to acquire lock 139764590020112 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-06-02 13:18:55,018 - DEBUG - Lock 139764590020112 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-06-02 13:18:55,260 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer.json HTTP/1.1" 200 466247
+2025-06-02 13:18:55,465 - DEBUG - Attempting to release lock 139764590020112 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-06-02 13:18:55,465 - DEBUG - Lock 139764590020112 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/cb202bfe2e3c98645018a6d12f182a434c9d3e02.lock
+2025-06-02 13:18:55,719 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/added_tokens.json HTTP/1.1" 404 0
+2025-06-02 13:18:55,960 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json HTTP/1.1" 200 0
+2025-06-02 13:18:55,962 - DEBUG - Attempting to acquire lock 139764589975248 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-06-02 13:18:55,963 - DEBUG - Lock 139764589975248 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-06-02 13:18:56,207 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/main/special_tokens_map.json HTTP/1.1" 200 112
+2025-06-02 13:18:56,208 - DEBUG - Attempting to release lock 139764589975248 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-06-02 13:18:56,209 - DEBUG - Lock 139764589975248 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/e7b0375001f109a6b8873d756ad4f7bbb15fbaa5.lock
+2025-06-02 13:18:56,450 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/main/chat_template.jinja HTTP/1.1" 404 0
+2025-06-02 13:18:56,755 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2/revision/main HTTP/1.1" 200 6806
+2025-06-02 13:18:56,762 - DEBUG - Starting new HTTPS connection (1): huggingface.co:443
+2025-06-02 13:18:57,469 - DEBUG - https://huggingface.co:443 "HEAD /sentence-transformers/all-MiniLM-L6-v2/resolve/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling/config.json HTTP/1.1" 200 0
+2025-06-02 13:18:57,472 - DEBUG - Attempting to acquire lock 139764582605072 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-06-02 13:18:57,473 - DEBUG - Lock 139764582605072 acquired on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-06-02 13:18:57,714 - DEBUG - https://huggingface.co:443 "GET /sentence-transformers/all-MiniLM-L6-v2/resolve/c9745ed1d9f207416be6d2e6f8de32d1f16199bf/1_Pooling/config.json HTTP/1.1" 200 190
+2025-06-02 13:18:57,716 - DEBUG - Attempting to release lock 139764582605072 on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-06-02 13:18:57,716 - DEBUG - Lock 139764582605072 released on /root/.cache/huggingface/hub/.locks/models--sentence-transformers--all-MiniLM-L6-v2/d1514c3162bbe87b343f565fadc62e6c06f04f03.lock
+2025-06-02 13:18:57,958 - DEBUG - https://huggingface.co:443 "GET /api/models/sentence-transformers/all-MiniLM-L6-v2 HTTP/1.1" 200 6806
+2025-06-02 13:18:57,983 - DEBUG - Using selector: EpollSelector
+2025-06-02 13:19:08,721 - INFO - Request coming GET and /
+2025-06-02 13:19:08,797 - INFO - Request coming GET and /favicon.ico
+2025-06-02 13:19:12,578 - INFO - Request coming GET and /metrics
+2025-06-02 16:23:56,844 - INFO - Request coming GET and /metrics
+2025-06-02 16:24:11,790 - INFO - Request coming GET and /metrics
+2025-06-02 16:24:26,788 - INFO - Request coming GET and /metrics
+2025-06-02 16:24:41,801 - INFO - Request coming GET and /metrics
+2025-06-02 16:24:56,788 - INFO - Request coming GET and /metrics
+2025-06-02 16:25:11,800 - INFO - Request coming GET and /metrics
+2025-06-02 16:25:26,788 - INFO - Request coming GET and /metrics
+2025-06-02 16:25:41,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:25:56,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:26:11,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:26:26,787 - INFO - Request coming GET and /metrics
+2025-06-02 16:26:41,789 - INFO - Request coming GET and /metrics
+2025-06-02 16:26:56,788 - INFO - Request coming GET and /metrics
+2025-06-02 16:27:11,787 - INFO - Request coming GET and /metrics
+2025-06-02 16:27:26,796 - INFO - Request coming GET and /metrics
+2025-06-02 16:27:41,787 - INFO - Request coming GET and /metrics
+2025-06-02 16:27:56,788 - INFO - Request coming GET and /metrics
+2025-06-02 16:28:11,789 - INFO - Request coming GET and /metrics
+2025-06-02 16:28:26,792 - INFO - Request coming GET and /metrics
+2025-06-02 16:28:41,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:28:56,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:29:11,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:29:26,787 - INFO - Request coming GET and /metrics
+2025-06-02 16:29:41,788 - INFO - Request coming GET and /metrics
+2025-06-02 16:29:56,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:30:11,782 - INFO - Request coming GET and /metrics
+2025-06-02 16:30:26,782 - INFO - Request coming GET and /metrics
+2025-06-02 16:30:41,791 - INFO - Request coming GET and /metrics
+2025-06-02 16:30:56,784 - INFO - Request coming GET and /metrics
+2025-06-02 16:31:11,780 - INFO - Request coming GET and /metrics
+2025-06-02 16:31:26,781 - INFO - Request coming GET and /metrics
+2025-06-02 16:31:41,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:31:56,780 - INFO - Request coming GET and /metrics
+2025-06-02 16:32:11,780 - INFO - Request coming GET and /metrics
+2025-06-02 16:32:26,779 - INFO - Request coming GET and /metrics
+2025-06-02 16:32:41,779 - INFO - Request coming GET and /metrics
+2025-06-02 16:32:56,801 - INFO - Request coming GET and /metrics
+2025-06-02 16:33:11,782 - INFO - Request coming GET and /metrics
+2025-06-02 16:33:26,779 - INFO - Request coming GET and /metrics
+2025-06-02 16:33:41,804 - INFO - Request coming GET and /metrics
+2025-06-02 16:33:56,782 - INFO - Request coming GET and /metrics
+2025-06-02 16:34:11,794 - INFO - Request coming GET and /metrics
+2025-06-02 16:34:26,793 - INFO - Request coming GET and /metrics
+2025-06-02 16:34:41,793 - INFO - Request coming GET and /metrics
+2025-06-02 16:34:56,780 - INFO - Request coming GET and /metrics
+2025-06-02 16:35:11,778 - INFO - Request coming GET and /metrics
+2025-06-02 16:35:26,781 - INFO - Request coming GET and /metrics
+2025-06-02 16:35:41,789 - INFO - Request coming GET and /metrics
+2025-06-02 16:35:56,780 - INFO - Request coming GET and /metrics
+2025-06-02 16:36:11,779 - INFO - Request coming GET and /metrics
+2025-06-02 16:36:26,779 - INFO - Request coming GET and /metrics
+2025-06-02 16:36:41,779 - INFO - Request coming GET and /metrics
+2025-06-02 16:36:56,778 - INFO - Request coming GET and /metrics
+2025-06-02 16:37:11,779 - INFO - Request coming GET and /metrics
+2025-06-02 16:37:26,785 - INFO - Request coming GET and /metrics
+2025-06-02 16:37:41,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:37:56,785 - INFO - Request coming GET and /metrics
+2025-06-02 16:38:11,784 - INFO - Request coming GET and /metrics
+2025-06-02 16:38:26,783 - INFO - Request coming GET and /metrics
+2025-06-02 16:38:41,773 - INFO - Request coming GET and /metrics
+2025-06-02 16:38:56,787 - INFO - Request coming GET and /metrics
+2025-06-02 16:39:11,776 - INFO - Request coming GET and /metrics
+2025-06-02 16:39:26,787 - INFO - Request coming GET and /metrics
+2025-06-02 16:39:41,779 - INFO - Request coming GET and /metrics
+2025-06-02 16:39:56,781 - INFO - Request coming GET and /metrics
+2025-06-02 16:40:11,780 - INFO - Request coming GET and /metrics
+2025-06-02 16:40:26,793 - INFO - Request coming GET and /metrics
+2025-06-02 16:40:41,780 - INFO - Request coming GET and /metrics
+2025-06-02 16:40:56,796 - INFO - Request coming GET and /metrics
+2025-06-02 16:41:11,780 - INFO - Request coming GET and /metrics
+2025-06-02 16:41:26,779 - INFO - Request coming GET and /metrics
+2025-06-02 16:41:41,788 - INFO - Request coming GET and /metrics
+2025-06-02 16:41:56,780 - INFO - Request coming GET and /metrics
+2025-06-02 16:42:11,780 - INFO - Request coming GET and /metrics
+2025-06-02 16:42:26,788 - INFO - Request coming GET and /metrics
+2025-06-02 16:42:41,791 - INFO - Request coming GET and /metrics
+2025-06-02 16:42:56,787 - INFO - Request coming GET and /metrics
+2025-06-02 16:43:11,805 - INFO - Request coming GET and /metrics
+2025-06-02 16:43:26,788 - INFO - Request coming GET and /metrics
+2025-06-02 16:43:41,799 - INFO - Request coming GET and /metrics
+2025-06-02 16:43:56,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:44:11,784 - INFO - Request coming GET and /metrics
+2025-06-02 16:44:26,785 - INFO - Request coming GET and /metrics
+2025-06-02 16:44:41,777 - INFO - Request coming GET and /metrics
+2025-06-02 16:44:56,776 - INFO - Request coming GET and /metrics
+2025-06-02 16:45:11,775 - INFO - Request coming GET and /metrics
+2025-06-02 16:45:26,782 - INFO - Request coming GET and /metrics
+2025-06-02 16:45:41,779 - INFO - Request coming GET and /metrics
+2025-06-02 16:45:56,776 - INFO - Request coming GET and /metrics
+2025-06-02 16:46:11,776 - INFO - Request coming GET and /metrics
+2025-06-02 16:46:26,777 - INFO - Request coming GET and /metrics
+2025-06-02 16:46:41,778 - INFO - Request coming GET and /metrics
+2025-06-02 16:46:56,776 - INFO - Request coming GET and /metrics
+2025-06-02 16:47:11,776 - INFO - Request coming GET and /metrics
+2025-06-02 16:47:26,778 - INFO - Request coming GET and /metrics
+2025-06-02 16:47:41,787 - INFO - Request coming GET and /metrics
+2025-06-02 16:47:56,776 - INFO - Request coming GET and /metrics
+2025-06-02 16:48:11,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:48:26,786 - INFO - Request coming GET and /metrics
+2025-06-02 16:48:41,784 - INFO - Request coming GET and /metrics
+2025-06-02 16:48:56,783 - INFO - Request coming GET and /metrics
+2025-06-02 16:49:11,785 - INFO - Request coming GET and /metrics
+2025-06-02 16:49:26,787 - INFO - Request coming GET and /metrics
+2025-06-02 16:49:41,778 - INFO - Request coming GET and /metrics

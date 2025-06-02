@@ -7,7 +7,7 @@ server:
   grpc_server_max_concurrent_streams: 1000
 
 common:
-  instance_addr: 127.0.0.1
+  instance_addr: 0.0.0.0
   path_prefix: /tmp/loki
   storage:
     filesystem:
@@ -42,10 +42,8 @@ schema_config:
 pattern_ingester:
   enabled: true
   metric_aggregation:
-    loki_address: http://172.24.192.1:3100 
+    loki_address: loki-service:3100
 
-ruler:
-  alertmanager_url: http://172.24.192.1:9093
 
 frontend:
   encoding: protobuf
