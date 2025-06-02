@@ -3,7 +3,10 @@ import pandas as pd
 import google.generativeai as genai
 import re 
 import os
+from load_dotenv import load_dotenv
 
+
+load_dotenv(".env.local")
 
 hotel_data_path = r"hotel_bookings.csv"  
 
@@ -14,7 +17,9 @@ hotel_booking_df.to_sql("bookings", conn, if_exists="replace", index=False)
 
 print("Database and table created successfully!")
 
-api_key = "AIzaSyCqqXochDTlqutMHKjcVHc87hLdmOKoju0"
+api_key = os.getenv("GOOGLE_API_KEY")
+if not api_key:
+    raise ValueError("GOOGLE_API_KEY not found in environment variables.")
 
 genai.configure(api_key=api_key)
 
